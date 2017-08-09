@@ -1,0 +1,100 @@
+html, body {
+    height: 100%;
+    font-size: 14px;
+    font-family: 'Enriqueta', serif;
+
+}
+
+body {
+    background:#E0BFB8;
+}
+
+h1 {
+    font-size: 16px;
+    font-family: 'Bitter', serif;
+    position: absolute;
+    top: 54px;
+    left: 54px;
+}
+
+div {
+    display: none
+}
+
+#tab1:checked ~ .content1 {
+    display: block;
+}
+
+#tab2:checked ~ .slider {
+    display: block;
+}
+
+#tab3:checked ~ .content3 {
+    display: block;
+}
+
+input {
+    display: none
+}
+
+label {
+    color: black;
+}
+
+input:checked + label {
+    background: black;
+    color: white;
+}
+
+.content1 {
+    position: absolute;
+    top: 200px;
+    left: 400px;
+}
+
+
+
+.slider {
+    width: 300px;
+    margin: 30px auto 0;
+    position: absolute;
+    top: 200px;
+    left: 400px;
+}
+.slider__previews {
+    display: flex;
+    overflow: auto;
+}
+
+
+.content3 {
+    position: absolute;
+    top: 200px;
+    left: 400px;
+}
+
+
+
+#tab1 + label {
+    position: absolute;
+    top: 200px;
+    left: 54px;
+}
+
+#tab2 + label {
+    position: absolute;
+    top: 220px;
+    left: 54px;
+}
+
+#tab3 + label {
+    position: absolute;
+    top: 240px;
+    left: 54px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
